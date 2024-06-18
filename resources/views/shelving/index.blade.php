@@ -37,7 +37,7 @@
                                         <th>No</th>
                                         
 									<th >Codshel</th>
-									<th >Topic Id</th>
+									<th >Topic</th>
 
                                         <th></th>
                                     </tr>
@@ -48,7 +48,7 @@
                                             <td>{{ ++$i }}</td>
                                             
 										<td >{{ $shelving->codshel }}</td>
-										<td >{{ $shelving->topic_id }}</td>
+										<td >{{ $shelving->topic->name }}</td>
 
                                             <td>
                                                 <form action="{{ route('shelvings.destroy', $shelving->id) }}" method="POST">

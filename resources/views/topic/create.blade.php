@@ -18,7 +18,7 @@
                             @csrf
 
                             @include('topic.form')
-
+                            
                         </form>
                     </div>
                 </div>

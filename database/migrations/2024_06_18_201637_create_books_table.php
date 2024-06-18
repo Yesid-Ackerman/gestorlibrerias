@@ -2,6 +2,7 @@
 
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
@@ -20,6 +21,9 @@ return new class extends Migration
             
             $table->timestamps();
         });
+        DB::table('books')->insert([
+            ['name'=>'100 Años de Soledad','date'=>'12:59:01','author_id'=>'1']
+        ]);
     }
 
     /**

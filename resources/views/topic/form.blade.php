@@ -8,7 +8,7 @@
         </div>
         <div class="form-group mb-2 mb20">
             <label for="code" class="form-label">{{ __('Code') }}</label>
-            <input type="text" name="code" class="form-control @error('code') is-invalid @enderror" value="{{ old('code', $topic?->code) }}" id="code" placeholder="Code">
+            <input type="color" name="code" class="form-control @error('code') is-invalid @enderror" value="{{ old('code', $topic?->code) }}" id="code" placeholder="Code">
             {!! $errors->first('code', '<div class="invalid-feedback" role="alert"><strong>:message</strong></div>') !!}
         </div>
 

@@ -38,7 +38,7 @@
                                         
 									<th >Name</th>
 									<th >Date</th>
-									<th >Author Id</th>
+									<th >Author</th>
 
                                         <th></th>
                                     </tr>
@@ -50,7 +50,7 @@
                                             
 										<td >{{ $book->name }}</td>
 										<td >{{ $book->date }}</td>
-										<td >{{ $book->author_id }}</td>
+										<td >{{ $book->author->name }}</td>
 
                                             <td>
                                                 <form action="{{ route('books.destroy', $book->id) }}" method="POST">

@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('copies', function (Blueprint $table) {
             $table->id();
             $table->foreignId('book_id')->references('id')->on('books');
-            $table->string('number');
+            $table->integer('number');
             $table->foreignId('shelving_id')->references('id')->on('shelvings');
             $table->timestamps();
         });

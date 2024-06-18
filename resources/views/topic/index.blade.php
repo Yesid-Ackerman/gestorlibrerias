@@ -48,8 +48,7 @@
                                             <td>{{ ++$i }}</td>
                                             
 										<td >{{ $topic->name }}</td>
-										<td >{{ $topic->code }}</td>
-
+										<td style="background-color: {{ $topic->code }}; border-radius:100%; width:5px; height:5px;"></td>
                                             <td>
                                                 <form action="{{ route('topics.destroy', $topic->id) }}" method="POST">
                                                     <a class="btn btn-sm btn-primary " href="{{ route('topics.show', $topic->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
